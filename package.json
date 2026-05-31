@@ -15,7 +15,8 @@
     "types:check": "tsc --noEmit"
   },
   "lint-staged": {
-    "*": "prettier -w --ignore-unknown"
+    "*": "prettier -w --ignore-unknown",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "prettier": "@solvro/config/prettier",
   "dependencies": {
