@@ -6,7 +6,6 @@ export default [
   ...solvroConfig,
   {
     rules: {
-      "import/no-default-export": "off",
       "unicorn/prefer-set-has": "off",
     },
   },
