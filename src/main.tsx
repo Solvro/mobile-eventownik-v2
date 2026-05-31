@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
+import { QueryProvider } from "./lib/query-client";
 import { routeTree } from "./routeTree.gen";
 
 const router = createRouter({ routeTree });
@@ -19,7 +20,9 @@ if (!rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      <RouterProvider router={router} />
+      <QueryProvider>
+        <RouterProvider router={router} />
+      </QueryProvider>
     </StrictMode>,
   );
 }
