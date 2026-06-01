@@ -9,7 +9,7 @@
     "cap:open:ios": "cap open ios",
     "cap:sync": "cap sync",
     "dev": "vite",
-    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "prepare": "husky || true",
