@@ -1,21 +1,127 @@
-# React + TypeScript + Vite + shadcn/ui
+# <img src="https://github.com/Solvro/web-testownik/blob/main/public/favicon/180x180.png?raw=true" width="24"> Eventownik Solvro – Mobile
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+<div align="center">
 
-## Adding components
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Tailwind](https://img.shields.io/badge/tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Vitest](https://img.shields.io/badge/vitest-%236E9F18.svg?style=for-the-badge&logo=vitest&logoColor=white)
+![RTL](https://img.shields.io/badge/RTL-E33332?style=for-the-badge&logo=testinglibrary&logoColor=white)
+![Capacitor](https://img.shields.io/badge/capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
+![React Router](https://img.shields.io/badge/react%20router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
 
-To add components to your app, run the following command:
+</div>
+
+## Uruchomienie lokalne
+
+### Wymagania
+
+- [Node.js](https://nodejs.org/) (zalecana wersja LTS)
+- npm (dostarczany z Node.js)
+- Android Studio (Android)
+- Xcode (macOS, iOS)
+
+### Instalacja
+
+1. **Sklonuj repozytorium**
+
+   ```bash
+   git clone https://github.com/Solvro/web-eventownik-v2.git
+   cd web-eventownik-v2
+   ```
+
+2. **Zainstaluj zależności**
+
+   ```bash
+   npm install
+   ```
+
+3. **Uruchom serwer deweloperski**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Otwórz przeglądarkę** i przejdź do `http://localhost:5173`
+
+## Uruchamianie na urządzeniach mobilnych
+
+Po zbudowaniu aplikacji zsynchronizuj projekt z natywnymi platformami:
 
 ```bash
-npx shadcn@latest add button
+npm run build
+npm run cap:sync
 ```
 
-This will place the ui components in the `src/components` directory.
+### Android
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+npm run cap:open:android
 ```
+
+### iOS
+
+```bash
+npm run cap:open:ios
+```
+
+## Dostępne skrypty
+
+| Komenda                    | Opis                                          |
+| -------------------------- | --------------------------------------------- |
+| `npm run dev`              | Uruchamia serwer deweloperski Vite            |
+| `npm run build`            | Buduje aplikację produkcyjną                  |
+| `npm run preview`          | Uruchamia podgląd zbudowanej aplikacji        |
+| `npm run lint`             | Sprawdza kod za pomocą ESLint                 |
+| `npm run format`           | Formatuje kod za pomocą Prettier              |
+| `npm run format:check`     | Sprawdza formatowanie kodu                    |
+| `npm run typecheck`        | Sprawdza typy TypeScript                      |
+| `npm run test`             | Uruchamia testy jednostkowe                   |
+| `npm run test:watch`       | Uruchamia Vitest w trybie watch               |
+| `npm run cap:sync`         | Synchronizuje projekt z platformami natywnymi |
+| `npm run cap:open:android` | Otwiera projekt Android w Android Studio      |
+| `npm run cap:open:ios`     | Otwiera projekt iOS w Xcode                   |
+
+## Stack technologiczny
+
+### Frontend
+
+- **Framework:** [React 19](https://react.dev/)
+- **Język:** [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool:** [Vite](https://vite.dev/)
+- **Routing:** [TanStack Router](https://tanstack.com/router/latest)
+- **Data Fetching & Caching:** [TanStack Query](https://tanstack.com/query/latest)
+
+### UI
+
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Komponenty:** [shadcn/ui](https://ui.shadcn.com/)
+- **Ikony:** [Lucide React](https://lucide.dev/)
+
+### Mobile
+
+- **Cross-platform Runtime:** [Capacitor](https://capacitorjs.com/)
+- **Android:** [Capacitor Android](https://capacitorjs.com/docs/android)
+- **iOS:** [Capacitor iOS](https://capacitorjs.com/docs/ios)
+
+### Jakość kodu
+
+- **Linting:** [ESLint](https://eslint.org/)
+- **Formatting:** [Prettier](https://prettier.io/)
+- **Git Hooks:** [Husky](https://typicode.github.io/husky/)
+- **Pre-commit Automation:** [lint-staged](https://github.com/lint-staged/lint-staged)
+
+### Testy
+
+- **Unit Testing:** [Vitest](https://vitest.dev/)
+- **Component Testing:** [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- **Browser Environment:** [JSDOM](https://github.com/jsdom/jsdom)
+
+---
+
+<div align="center">
+
+Stworzone przez [KN Solvro](https://github.com/Solvro) dla studentów Politechniki Wrocławskiej
+
+</div>
