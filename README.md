@@ -18,7 +18,7 @@
 ### Wymagania
 
 - [Node.js](https://nodejs.org/) (zalecana wersja LTS)
-- npm (dostarczany z Node.js)
+- pnpm (dostarczany z Node.js)
 - Android Studio (Android)
 - Xcode (macOS, iOS)
 
@@ -34,13 +34,13 @@
 2. **Zainstaluj zależności**
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Uruchom serwer deweloperski**
 
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 4. **Otwórz przeglądarkę** i przejdź do `http://localhost:5173`
@@ -50,38 +50,38 @@
 Po zbudowaniu aplikacji zsynchronizuj projekt z natywnymi platformami:
 
 ```bash
-npm run build
-npm run cap:sync
+pnpm run build
+pnpm run cap:sync
 ```
 
 ### Android
 
 ```bash
-npm run cap:open:android
+pnpm run cap:open:android
 ```
 
 ### iOS
 
 ```bash
-npm run cap:open:ios
+pnpm run cap:open:ios
 ```
 
 ## Dostępne skrypty
 
-| Komenda                    | Opis                                          |
-| -------------------------- | --------------------------------------------- |
-| `npm run dev`              | Uruchamia serwer deweloperski Vite            |
-| `npm run build`            | Buduje aplikację produkcyjną                  |
-| `npm run preview`          | Uruchamia podgląd zbudowanej aplikacji        |
-| `npm run lint`             | Sprawdza kod za pomocą ESLint                 |
-| `npm run format`           | Formatuje kod za pomocą Prettier              |
-| `npm run format:check`     | Sprawdza formatowanie kodu                    |
-| `npm run typecheck`        | Sprawdza typy TypeScript                      |
-| `npm run test`             | Uruchamia testy jednostkowe                   |
-| `npm run test:watch`       | Uruchamia Vitest w trybie watch               |
-| `npm run cap:sync`         | Synchronizuje projekt z platformami natywnymi |
-| `npm run cap:open:android` | Otwiera projekt Android w Android Studio      |
-| `npm run cap:open:ios`     | Otwiera projekt iOS w Xcode                   |
+| Komenda                     | Opis                                          |
+| --------------------------- | --------------------------------------------- |
+| `pnpm run dev`              | Uruchamia serwer deweloperski Vite            |
+| `pnpm run build`            | Buduje aplikację produkcyjną                  |
+| `pnpm run preview`          | Uruchamia podgląd zbudowanej aplikacji        |
+| `pnpm run lint`             | Sprawdza kod za pomocą ESLint                 |
+| `pnpm run format`           | Formatuje kod za pomocą Prettier              |
+| `pnpm run format:check`     | Sprawdza formatowanie kodu                    |
+| `pnpm run typecheck`        | Sprawdza typy TypeScript                      |
+| `pnpm run test`             | Uruchamia testy jednostkowe                   |
+| `pnpm run test:watch`       | Uruchamia Vitest w trybie watch               |
+| `pnpm run cap:sync`         | Synchronizuje projekt z platformami natywnymi |
+| `pnpm run cap:open:android` | Otwiera projekt Android w Android Studio      |
+| `pnpm run cap:open:ios`     | Otwiera projekt iOS w Xcode                   |
 
 ## Stack technologiczny
 
